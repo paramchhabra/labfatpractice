@@ -1,0 +1,49 @@
+
+.headform{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 20%;
+}
+
+
+.form-group {
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-group label {
+    margin-right: 10px;
+}
+
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.mainform {
+    width: 400px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    text-align: center; /* Align the form contents to the left */
+    background-color: bisque;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 1%;
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.415);
+}
+
+.mainform input[type="text"],button{
+    margin: 1%;
+}
+
+.mainform button{
+    box-shadow: 0 0 0 0;
+    transition: box-shadow 1s ease-in-out;
+}
+
+.mainform button:hover{
+    box-shadow: 10px 20px 0px 0px rgb(0, 0, 0);
+}
+

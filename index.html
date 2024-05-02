@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body onload="getvalue()">
+    <div id="spanhere"></div>
+    <form onsubmit="return false" id="mainform" class="mainform">
+        <div class="headform">
+            <h1>Practice Form</h1>
+        </div>
+        <div class="form-group">
+            <label for="item">Enter Address</label>
+            <textarea name="item" id="item" cols="30" rows="5">newtextarea</textarea>
+        </div>
+        <input type="text" name="num1" id="num1" placeholder="enter number 1">
+        <input type="text" name="num2" id="num2" placeholder="enter number 2">
+        <input type="text" name="num1" id="num1" placeholder="enter number 1">
+        <input type="text" name="num2" id="num2" placeholder="enter number 2">
+        <div id="radcheckgrid">
+            <div>
+                <label for="rad1">choose</label>
+                <input type="radio" name="rad1" id="rad1" value="1">option1
+                <input type="radio" name="rad1" id="rad2" value="2">option2
+                <input type="radio" name="rad1" id="rad3" value="3">option3
+            </div>
+            <div>
+                <label for="check1">Checkboxes</label>
+                <input type="checkbox" name="check1" id="check1" value="c1">check1
+                <input type="checkbox" name="check1" id="check2" value="c2">check2
+                <input type="checkbox" name="check1" id="check2" value="c3">check3
+            </div>
+        </div>
+        <br><br>
+        <button type="submit" onclick="submitform()">click</button>
+    </form>
+    <input type="text" name="num1" id="numa" placeholder="enter number 1">
+    <input type="text" name="num2" id="numb" placeholder="enter number 2">
+    <button id="sum" onclick="getsum()">Get Sum</button>
+    <h1 id="answervalue"></h1>
+    <select name="selection" id="selection" oninput="selectinput()">
+        <option disabled selected>SELECT UR NUMBERS</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <h3 id="selectout"></h3>
+
+    <input type="text" id="inputcount" oninput="textcount()" placeholder="enter text to be counted">
+    <h3 id="countletter"></h3>
+
+    <div class="circle" id="circle" href="new.html"></div>
+    <br>
+    <button id="changewindows">CHANGE WINDOWS</button>
+    <input type="email" name="email" id="email" oninput="checkemail()" placeholder="enteremail">
+    <p id="errormail" style="color: red;"></p>
+
+    <br>
+
+
+    <input type="phonenum" name="phonenum" id="phonenum" oninput="checkphone()" placeholder="enterphonenumber">
+    <p id="phoneerror" style="color: red;"></p>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- date manipulation, number addition, eventlisteners, alertbox inputs,prevent form reload on submit, 
+    check for empty form,push element,changewebpage via js,radio checkbox input save, queryselector  -->
