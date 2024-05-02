@@ -75,3 +75,15 @@ function checkphone() {
         document.getElementById("phoneerror").innerHTML = "";
     }
 }
+
+function givedate() {
+    let date = new Date();
+    document.getElementById("dateobj").innerHTML = date.get.toString();
+}
+
+function getdatediffer() {
+    let date1 = new Date(document.getElementById("date1").value);
+    let date2 = new Date(document.getElementById("date2").value);
+    let difference = Math.abs(date1.getDate() - date2.getDate());
+    console.log(difference);
+}
